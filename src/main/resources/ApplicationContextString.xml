@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<bean id="String" class="com.assignment.question2.QuestionString">
+    <constructor-arg value="1" />
+    <constructor-arg value="What is the capital of France?" />
+    <constructor-arg>
+        <list>
+            <value>Paris</value>
+            <value>Lyon</value>
+            <value>Marseille</value>
+        </list>
+    </constructor-arg>
+</bean>
+</beans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="myDataService" class="com.assignment.question5.MyDataService" />
+
+  <bean id="consoleLogger" class="com.assignment.question5.ConsoleLogger" />
+
+  <bean id="annotationDemo" class="com.assignment.question5.AnnotationDemo">
+    <constructor-arg ref="myDataService" />
+    <property name="logger" ref="consoleLogger" />
+    <property name="requiredProperty" value="some value" />
+  </bean>
+
+</beans>
